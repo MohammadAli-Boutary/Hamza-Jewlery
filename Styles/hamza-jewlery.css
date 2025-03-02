@@ -1,64 +1,64 @@
 @use "sass:math";
 @font-face {
   font-family: 'Kurale';
-  src: url("./fonts/Kurale-Regular.eot");
-  src: url("./fonts/Kurale-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Kurale-Regular.woff2") format("woff2"), url("./fonts/Kurale-Regular.woff") format("woff"), url("./fonts/Kurale-Regular.ttf") format("truetype");
+  src: url("/Styles/Fonts/fontsKurale-Regular.eot");
+  src: url("/Styles/Fonts/fontsKurale-Regular.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/fontsKurale-Regular.woff2") format("woff2"), url("/Styles/Fonts/fontsKurale-Regular.woff") format("woff"), url("/Styles/Fonts/fontsKurale-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-SemiBold.eot");
-  src: url("./fonts/Lora-SemiBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-SemiBold.woff2") format("woff2"), url("./fonts/Lora-SemiBold.woff") format("woff"), url("./fonts/Lora-SemiBold.ttf") format("truetype"), url("./fonts/Lora-SemiBold.svg#Lora-SemiBold") format("svg");
+  src: url("/Styles/Fonts/Lora-SemiBold.eot");
+  src: url("/Styles/Fonts/Lora-SemiBold.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-SemiBold.woff2") format("woff2"), url("/Styles/Fonts/Lora-SemiBold.woff") format("woff"), url("/Styles/Fonts/Lora-SemiBold.ttf") format("truetype"), url("/Styles/Fonts/Lora-SemiBold.svg#Lora-SemiBold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-Medium.eot");
-  src: url("./fonts/Lora-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-Medium.woff2") format("woff2"), url("./fonts/Lora-Medium.woff") format("woff"), url("./fonts/Lora-Medium.ttf") format("truetype"), url("./fonts/Lora-Medium.svg#Lora-Medium") format("svg");
+  src: url("/Styles/Fonts/Lora-Medium.eot");
+  src: url("/Styles/Fonts/Lora-Medium.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-Medium.woff2") format("woff2"), url("/Styles/Fonts/Lora-Medium.woff") format("woff"), url("/Styles/Fonts/Lora-Medium.ttf") format("truetype"), url("/Styles/Fonts/Lora-Medium.svg#Lora-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-SemiBoldItalic.eot");
-  src: url("./fonts/Lora-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-SemiBoldItalic.woff2") format("woff2"), url("./fonts/Lora-SemiBoldItalic.woff") format("woff"), url("./fonts/Lora-SemiBoldItalic.ttf") format("truetype"), url("./fonts/Lora-SemiBoldItalic.svg#Lora-SemiBoldItalic") format("svg");
+  src: url("/Styles/Fonts/Lora-SemiBoldItalic.eot");
+  src: url("/Styles/Fonts/Lora-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-SemiBoldItalic.woff2") format("woff2"), url("/Styles/Fonts/Lora-SemiBoldItalic.woff") format("woff"), url("/Styles/Fonts/Lora-SemiBoldItalic.ttf") format("truetype"), url("/Styles/Fonts/Lora-SemiBoldItalic.svg#Lora-SemiBoldItalic") format("svg");
   font-weight: 600;
   font-style: italic;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-Regular.eot");
-  src: url("./fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-Regular.woff2") format("woff2"), url("./fonts/Lora-Regular.woff") format("woff"), url("./fonts/Lora-Regular.ttf") format("truetype"), url("./fonts/Lora-Regular.svg#Lora-Regular") format("svg");
+  src: url("/Styles/Fonts/Lora-Regular.eot");
+  src: url("/Styles/Fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-Regular.woff2") format("woff2"), url("/Styles/Fonts/Lora-Regular.woff") format("woff"), url("/Styles/Fonts/Lora-Regular.ttf") format("truetype"), url("/Styles/Fonts/Lora-Regular.svg#Lora-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-Bold.eot");
-  src: url("./fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-Bold.woff2") format("woff2"), url("./fonts/Lora-Bold.woff") format("woff"), url("./fonts/Lora-Bold.ttf") format("truetype"), url("./fonts/Lora-Bold.svg#Lora-Bold") format("svg");
+  src: url("/Styles/Fonts/Lora-Bold.eot");
+  src: url("/Styles/Fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-Bold.woff2") format("woff2"), url("/Styles/Fonts/Lora-Bold.woff") format("woff"), url("/Styles/Fonts/Lora-Bold.ttf") format("truetype"), url("/Styles/Fonts/Lora-Bold.svg#Lora-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-BoldItalic.eot");
-  src: url("./fonts/Lora-BoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-BoldItalic.woff2") format("woff2"), url("./fonts/Lora-BoldItalic.woff") format("woff"), url("./fonts/Lora-BoldItalic.ttf") format("truetype"), url("./fonts/Lora-BoldItalic.svg#Lora-BoldItalic") format("svg");
+  src: url("/Styles/Fonts/Lora-BoldItalic.eot");
+  src: url("/Styles/Fonts/Lora-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-BoldItalic.woff2") format("woff2"), url("/Styles/Fonts/Lora-BoldItalic.woff") format("woff"), url("/Styles/Fonts/Lora-BoldItalic.ttf") format("truetype"), url("/Styles/Fonts/Lora-BoldItalic.svg#Lora-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-Italic.eot");
-  src: url("./fonts/Lora-Italic.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-Italic.woff2") format("woff2"), url("./fonts/Lora-Italic.woff") format("woff"), url("./fonts/Lora-Italic.ttf") format("truetype"), url("./fonts/Lora-Italic.svg#Lora-Italic") format("svg");
+  src: url("/Styles/Fonts/Lora-Italic.eot");
+  src: url("/Styles/Fonts/Lora-Italic.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-Italic.woff2") format("woff2"), url("/Styles/Fonts/Lora-Italic.woff") format("woff"), url("/Styles/Fonts/Lora-Italic.ttf") format("truetype"), url("/Styles/Fonts/Lora-Italic.svg#Lora-Italic") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap; }
 @font-face {
   font-family: 'Lora';
-  src: url("./fonts/Lora-MediumItalic.eot");
-  src: url("./fonts/Lora-MediumItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/Lora-MediumItalic.woff2") format("woff2"), url("./fonts/Lora-MediumItalic.woff") format("woff"), url("./fonts/fonts/Lora-MediumItalic.ttf") format("truetype"), url("./fonts/Lora-MediumItalic.svg#Lora-MediumItalic") format("svg");
+  src: url("/Styles/Fonts/Lora-MediumItalic.eot");
+  src: url("/Styles/Fonts/Lora-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-MediumItalic.woff2") format("woff2"), url("/Styles/Fonts/Lora-MediumItalic.woff") format("woff"), url("/Styles/Fonts/fonts/Styles/Fonts/Lora-MediumItalic.ttf") format("truetype"), url("/Styles/Fonts/Lora-MediumItalic.svg#Lora-MediumItalic") format("svg");
   font-weight: 500;
   font-style: italic;
   font-display: swap; }
