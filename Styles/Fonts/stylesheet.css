@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bastiken';
+    src: url('Bastiken.eot');
+    src: url('Bastiken.eot?#iefix') format('embedded-opentype'),
+        url('Bastiken.woff2') format('woff2'),
+        url('Bastiken.woff') format('woff'),
+        url('Bastiken.ttf') format('truetype'),
+        url('Bastiken.svg#Bastiken') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

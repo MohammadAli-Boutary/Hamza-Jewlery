@@ -1,0 +1,194 @@
+@use "sass:math";
+
+$darkBlue: #002438;
+$green: #638137;
+$textGrey:#707070;
+$textSecBlue:#003D77;
+$white: #ffffff;
+$black: #000000;
+$blackPrimary: #1B1B1B;
+$beige: #EAD9CE;
+$brown: #B07B54;
+// Added variables
+$darkGrey:#555766;
+$lightGrey:#F1F3F6;
+$blue:#0073B2;
+$lightWhite:#F5F5F5;
+
+$font: 'Lora';
+$secondary-font: 'Kurale';
+
+@mixin transition($transitionProps) {
+  -webkit-transition: $transitionProps;
+  -moz-transition: $transitionProps;
+  -ms-transition: $transitionProps;
+  -o-transition: $transitionProps;
+  transition: $transitionProps;
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin font($min-font-size, $max-font-size) {
+  $u1: unit(320px);
+  $u2: unit(1921px);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+    & {
+      font-size: $min-font-size;
+
+      @media screen and (min-width: 320px) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - 320px) / #{strip-unit(1921px - 320px)}));
+      }
+
+      @media screen and (min-width: 1921px) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+@mixin lh($min-lh, $max-lh) {
+  $u1: unit(420px);
+  $u2: unit(1600px);
+  $u3: unit($min-lh);
+  $u4: unit($max-lh);
+
+  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+    & {
+      line-height: $min-lh;
+
+      @media screen and (min-width: 420px) {
+        line-height: calc(#{$min-lh} + #{strip-unit($max-lh - $min-lh)} * ((100vw - 420px) / #{strip-unit(1600px - 420px)}));
+      }
+
+      @media screen and (min-width: 1600px) {
+        line-height: $max-lh;
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: 'Kurale';
+  src: url('fonts/Kurale-Regular.eot');
+  src: url('fonts/Kurale-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Kurale-Regular.woff2') format('woff2'),
+      url('fonts/Kurale-Regular.woff') format('woff'),
+      url('fonts/Kurale-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-SemiBold.eot');
+  src: url('fonts/Lora-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-SemiBold.woff2') format('woff2'),
+      url('fonts/Lora-SemiBold.woff') format('woff'),
+      url('fonts/Lora-SemiBold.ttf') format('truetype'),
+      url('fonts/Lora-SemiBold.svg#Lora-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Medium.eot');
+  src: url('fonts/Lora-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-Medium.woff2') format('woff2'),
+      url('fonts/Lora-Medium.woff') format('woff'),
+      url('fonts/Lora-Medium.ttf') format('truetype'),
+      url('fonts/Lora-Medium.svg#Lora-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-SemiBoldItalic.eot');
+  src: url('fonts/Lora-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-SemiBoldItalic.woff2') format('woff2'),
+      url('fonts/Lora-SemiBoldItalic.woff') format('woff'),
+      url('fonts/Lora-SemiBoldItalic.ttf') format('truetype'),
+      url('fonts/Lora-SemiBoldItalic.svg#Lora-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Regular.eot');
+  src: url('fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-Regular.woff2') format('woff2'),
+      url('fonts/Lora-Regular.woff') format('woff'),
+      url('fonts/Lora-Regular.ttf') format('truetype'),
+      url('fonts/Lora-Regular.svg#Lora-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Bold.eot');
+  src: url('fonts/Lora-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-Bold.woff2') format('woff2'),
+      url('fonts/Lora-Bold.woff') format('woff'),
+      url('fonts/Lora-Bold.ttf') format('truetype'),
+      url('fonts/Lora-Bold.svg#Lora-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-BoldItalic.eot');
+  src: url('fonts/Lora-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-BoldItalic.woff2') format('woff2'),
+      url('fonts/Lora-BoldItalic.woff') format('woff'),
+      url('fonts/Lora-BoldItalic.ttf') format('truetype'),
+      url('fonts/Lora-BoldItalic.svg#Lora-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Italic.eot');
+  src: url('fonts/Lora-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-Italic.woff2') format('woff2'),
+      url('fonts/Lora-Italic.woff') format('woff'),
+      url('fonts/Lora-Italic.ttf') format('truetype'),
+      url('fonts/Lora-Italic.svg#Lora-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-MediumItalic.eot');
+  src: url('fonts/Lora-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Lora-MediumItalic.woff2') format('woff2'),
+      url('fonts/Lora-MediumItalic.woff') format('woff'),
+      url('fonts/fonts/Lora-MediumItalic.ttf') format('truetype'),
+      url('fonts/Lora-MediumItalic.svg#Lora-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
