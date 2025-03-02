@@ -1,8 +1,8 @@
 @use "sass:math";
 @font-face {
   font-family: 'Kurale';
-  src: url("/Styles/Fonts/fontsKurale-Regular.eot");
-  src: url("/Styles/Fonts/fontsKurale-Regular.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/fontsKurale-Regular.woff2") format("woff2"), url("/Styles/Fonts/fontsKurale-Regular.woff") format("woff"), url("/Styles/Fonts/fontsKurale-Regular.ttf") format("truetype");
+  src: url("/Styles/Fonts/Kurale-Regular.eot");
+  src: url("/Styles/Fonts/Kurale-Regular.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Kurale-Regular.woff2") format("woff2"), url("/Styles/Fonts/Kurale-Regular.woff") format("woff"), url("/Styles/Fonts/Kurale-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -58,7 +58,7 @@
 @font-face {
   font-family: 'Lora';
   src: url("/Styles/Fonts/Lora-MediumItalic.eot");
-  src: url("/Styles/Fonts/Lora-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-MediumItalic.woff2") format("woff2"), url("/Styles/Fonts/Lora-MediumItalic.woff") format("woff"), url("/Styles/Fonts/fonts/Styles/Fonts/Lora-MediumItalic.ttf") format("truetype"), url("/Styles/Fonts/Lora-MediumItalic.svg#Lora-MediumItalic") format("svg");
+  src: url("/Styles/Fonts/Lora-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/Styles/Fonts/Lora-MediumItalic.woff2") format("woff2"), url("/Styles/Fonts/Lora-MediumItalic.woff") format("woff"), url("/Styles/Fonts/Lora-MediumItalic.ttf") format("truetype"), url("/Styles/Fonts/Lora-MediumItalic.svg#Lora-MediumItalic") format("svg");
   font-weight: 500;
   font-style: italic;
   font-display: swap; }
