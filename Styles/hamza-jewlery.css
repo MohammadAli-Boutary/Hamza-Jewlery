@@ -81,7 +81,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03); }
   header.hideMenu {
     transform: translateY(-100%); }
@@ -89,7 +93,11 @@ header {
     padding-right: 100px; }
   header .search {
     cursor: pointer;
-    transition: all 0.3s ease-in-out; }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     header .search:hover img {
       filter: brightness(0) saturate(100%) invert(84%) sepia(67%) saturate(2%) hue-rotate(44deg) brightness(110%) contrast(101%); }
   header .headerWrapper {
@@ -126,7 +134,11 @@ header {
             background-color: #000000;
             height: 1px;
             inset-inline-start: 0;
-            transition: all 0.3s ease-in-out; }
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
     header .headerWrapper .middle {
       display: flex;
       justify-content: center; }
@@ -240,13 +252,21 @@ header {
       align-items: center;
       font-family: "Kurale";
       font-size: 18px;
-      transition: all 1.5s ease-in-out; }
+      -webkit-transition: all 1.5s ease;
+      -moz-transition: all 1.5s ease;
+      -ms-transition: all 1.5s ease;
+      -o-transition: all 1.5s ease;
+      transition: all 1.5s ease; }
 
 .btn {
   background-color: #B07B54;
   color: #ffffff;
   display: inline-block;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 0 30px 30px 0;
   padding: 10px 30px;
   padding-right: 40px; }

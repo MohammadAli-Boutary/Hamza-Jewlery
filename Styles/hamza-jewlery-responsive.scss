@@ -1,3 +1,6 @@
+@import './variables.scss';
+
+
 @media all and (max-width: 1200px) {}
 
 @media all and (max-width: 992px) {
@@ -137,7 +140,7 @@
 
             .left {
                 .menuList {
-                    transition: all 0.3s ease-in-out;
+                    @include transition(all 0.3s ease);
                     z-index: 100;
                     position: fixed;
                     top: 0;

@@ -72,6 +72,14 @@ $secondary-font: 'Kurale';
   }
 }
 
+@mixin transition($transitionProps) {
+  -webkit-transition: $transitionProps;
+  -moz-transition: $transitionProps;
+  -ms-transition: $transitionProps;
+  -o-transition: $transitionProps;
+  transition: $transitionProps;
+}
+
 @font-face {
   font-family: 'Kurale';
   src: url('fonts/Kurale-Regular.eot');
