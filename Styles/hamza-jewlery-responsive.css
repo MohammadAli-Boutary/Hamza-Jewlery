@@ -55,6 +55,8 @@
 
   header .container {
     padding: 0 20px; }
+  header .headerWrapper .close {
+    display: block; }
   header .headerWrapper .middle {
     width: 50%; }
     header .headerWrapper .middle .logoHolder {

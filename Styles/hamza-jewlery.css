@@ -96,6 +96,8 @@ header {
     display: flex;
     align-items: center;
     padding: 20px 0; }
+    header .headerWrapper .close {
+      display: none; }
     header .headerWrapper .left .menuList {
       display: flex;
       align-items: center;
