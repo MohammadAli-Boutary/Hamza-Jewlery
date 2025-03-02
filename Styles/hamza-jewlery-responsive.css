@@ -55,8 +55,6 @@
 
   header .container {
     padding: 0 20px; }
-  header .headerWrapper .close {
-    display: block; }
   header .headerWrapper .middle {
     width: 50%; }
     header .headerWrapper .middle .logoHolder {
@@ -82,6 +80,8 @@
     align-items: center;
     justify-content: center; }
     header .headerWrapper .left .menuList.active {
-      transform: none; } }
+      transform: none; }
+    header .headerWrapper .left .menuList .close {
+      display: block; } }
 
 /*# sourceMappingURL=hamza-jewlery-responsive.css.map */

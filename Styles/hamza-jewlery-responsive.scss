@@ -112,9 +112,7 @@
 
 
         .headerWrapper {
-            .close{
-                display: block;
-            }
+          
     
             .middle {
                 width: 50%;
@@ -154,6 +152,10 @@
                     justify-content: center;
                     &.active{
                         transform: none;
+                    }
+
+                    .close{
+                        display: block;
                     }
                 }
             }
