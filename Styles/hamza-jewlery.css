@@ -11,7 +11,7 @@
   max-width: 100% !important; }
 
 .main {
-  padding-top: 94px; }
+  padding-top: 85px; }
 
 header {
   background-color: #EAD9CE;
@@ -83,7 +83,8 @@ header {
       justify-content: center; }
       header .headerWrapper .middle .logoHolder {
         display: inline-block;
-        max-width: 147px; }
+        max-width: 147px;
+        line-height: 0; }
         header .headerWrapper .middle .logoHolder img {
           width: 100%;
           max-width: 100%; }
@@ -266,7 +267,7 @@ header {
   padding: 100px 0;
   color: #1B1B1B; }
   .textBlock .blockTitle {
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
     .textBlock .blockTitle h2 {
       font-family: "Kurale";
       font-weight: 300; }
@@ -284,5 +285,104 @@ header {
       line-height: 1.8;
       max-width: 90%;
       margin: 0 auto; }
+
+footer {
+  background-color: #EAD9CE;
+  color: #1B1B1B;
+  font-weight: 300; }
+  footer .footerWrapper {
+    padding-top: 60px;
+    padding-bottom: 10px; }
+    footer .footerWrapper .top {
+      margin-bottom: 40px; }
+      footer .footerWrapper .top .left .inputHolder {
+        position: relative;
+        display: block;
+        max-width: 80%; }
+        footer .footerWrapper .top .left .inputHolder input {
+          border-radius: 30px;
+          border-color: transparent;
+          outline-color: transparent;
+          padding: 13px 15px;
+          width: 100%;
+          font-size: 16px; }
+        footer .footerWrapper .top .left .inputHolder a {
+          position: absolute;
+          inset-inline-start: 80%;
+          background-color: #B07B54;
+          color: #ffffff;
+          top: 50%;
+          font-size: 16px;
+          transform: translateY(-50%);
+          border-radius: 30px;
+          padding: 15px 35px;
+          font-family: "Kurale";
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+      footer .footerWrapper .top .left .newsLetter h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-weight: 300; }
+      footer .footerWrapper .top .left .newsLetter p {
+        color: #6A6A6A;
+        font-size: 16px;
+        margin-bottom: 20px; }
+      footer .footerWrapper .top .right .menuList h2 {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 20px; }
+      footer .footerWrapper .top .right .menuList a {
+        color: #1B1B1B;
+        display: inline-block;
+        margin-bottom: 12px;
+        position: relative;
+        line-height: 1.2;
+        padding-bottom: 5px; }
+        footer .footerWrapper .top .right .menuList a:hover::after {
+          width: 100%; }
+        footer .footerWrapper .top .right .menuList a::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          background-color: #1B1B1B;
+          width: 0;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          height: 1px;
+          inset-inline-start: 0; }
+    footer .footerWrapper .bottom .copyrights {
+      border-top: 1px solid #B2A4A4;
+      padding-top: 10px;
+      text-align: center; }
+    footer .footerWrapper .bottom .socialMedia {
+      margin-bottom: 40px; }
+      footer .footerWrapper .bottom .socialMedia .social {
+        height: 50px;
+        width: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid #B07B54;
+        margin-inline-end: 30px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        footer .footerWrapper .bottom .socialMedia .social a {
+          width: 20px;
+          height: 20px;
+          object-fit: contain; }
+        footer .footerWrapper .bottom .socialMedia .social:hover {
+          background-color: #ffffff;
+          border-color: #ffffff; }
 
 /*# sourceMappingURL=hamza-jewlery.css.map */

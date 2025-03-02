@@ -13,8 +13,8 @@
 
 }
 
-.main{
-    padding-top: 94px;
+.main {
+    padding-top: 85px;
 }
 
 header {
@@ -27,9 +27,9 @@ header {
     z-index: 100;
     @include transition(all 0.3s ease);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
-    
 
-    &.hideMenu{
+
+    &.hideMenu {
         transform: translateY(-100%);
     }
 
@@ -61,7 +61,7 @@ header {
                 align-items: center;
                 gap: 40px;
 
-                .close{
+                .close {
                     position: absolute;
                     top: 10px;
                     right: 20px;
@@ -109,6 +109,7 @@ header {
             .logoHolder {
                 display: inline-block;
                 max-width: 147px;
+                line-height: 0;
 
                 img {
                     width: 100%;
@@ -121,9 +122,10 @@ header {
             display: flex;
             justify-content: end;
 
-            .menuButton{
+            .menuButton {
                 display: none;
-                .line{
+
+                .line {
                     background-color: $blackPrimary;
                     width: 20px;
                     height: 1px;
@@ -145,6 +147,7 @@ header {
     padding-bottom: 50px;
     padding-top: 30px;
     overflow: hidden;
+
     .container {
         padding-right: 0;
     }
@@ -201,6 +204,7 @@ header {
 
     .blockBody {
         .listingHolder {
+
             // &.active{
             //     .listingItem{
             //         .listingTitle{
@@ -211,14 +215,16 @@ header {
             .listingItem {
                 position: relative;
 
-                .listingImage{
+                .listingImage {
                     max-width: 100%;
-                    img{
+
+                    img {
                         width: 100%;
                         object-fit: cover;
                         max-width: 90%;
                     }
                 }
+
                 .listingTitle {
                     position: absolute;
                     bottom: 30px;
@@ -289,27 +295,30 @@ header {
                 margin-bottom: 72px;
                 display: flex;
 
-                .listingItemDIV{
+                .listingItemDIV {
                     // padding: 30px;
                     // transition: all 0.3s ease-in-out;
 
                     // &:hover{
                     //     background-color: $beige;
                     // }
-                    .listingImage{
+                    .listingImage {
                         margin-bottom: 10px;
                         max-width: 100%;
-                        img{
+
+                        img {
                             width: 100%;
                         }
                     }
-                    .listingTitle{
+
+                    .listingTitle {
                         font-size: 16px;
                         color: $blackPrimary;
                         line-height: 1.2;
                         margin-bottom: 5px;
                     }
-                    .price{
+
+                    .price {
                         color: $blackPrimary;
                         line-height: 1.2;
                         font-size: 16px;
@@ -333,28 +342,167 @@ header {
     }
 }
 
-.textBlock{
+.textBlock {
     text-align: center;
     background-color: $beige;
     padding: 100px 0;
     color: $blackPrimary;
 
-    .blockTitle{
-        margin-bottom: 50px;
+    .blockTitle {
+        margin-bottom: 40px;
 
-        h2{
+        h2 {
             font-family: $secondary-font;
             font-weight: 300;
-            @include font(25px,32px);
+            @include font(25px, 32px);
         }
     }
-    .blockDescription{
+
+    .blockDescription {
         font-size: 17px;
-        p{
+
+        p {
             line-height: 1.8;
             max-width: 90%;
             margin: 0 auto;
         }
 
+    }
+}
+
+
+footer {
+    background-color: $beige;
+    color: $blackPrimary;
+    font-weight: 300;
+
+    .footerWrapper {
+        padding-top: 60px;
+        padding-bottom: 10px;
+
+        .top {
+            margin-bottom: 40px;
+
+            .left {
+                .inputHolder {
+                    position: relative;
+                    display: block;
+                    max-width: 80%;
+                    input {
+                        border-radius: 30px;
+                        border-color: transparent;
+                        outline-color: transparent;
+                        padding: 13px 15px;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                    a{
+                        position: absolute;
+                        inset-inline-start: 80%;
+                        background-color: $brown;
+                        color: $white;
+                        top: 50%;
+                        font-size: 16px;
+                        transform: translateY(-50%);
+                        border-radius: 30px;
+                        padding: 15px 35px;
+                        font-family: $secondary-font;
+                        @include transition(all 0.3s ease);
+
+                        &:hover{
+
+                        }
+                    }
+                }
+
+                .newsLetter {
+                    h3 {
+                        font-size: 22px;
+                        margin-bottom: 20px;
+                        line-height: 1.2;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        color: #6A6A6A;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .right {
+                .menuList {
+                    h2 {
+                        font-size: 20px;
+                        font-weight: 300;
+                        margin-bottom: 20px;
+                    }
+
+                    a {
+                        color: $blackPrimary;
+                        display: inline-block;
+                        margin-bottom: 12px;
+                        position: relative;
+                        line-height: 1.2;
+                        padding-bottom: 5px;
+
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            background-color: $blackPrimary;
+                            width: 0;
+                            @include transition(all 0.3s ease);
+                            height: 1px;
+                            inset-inline-start: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            .copyrights{
+                border-top: 1px solid #B2A4A4;
+                padding-top: 10px;
+                text-align: center;
+            }
+            .socialMedia {
+                margin-bottom: 40px;
+
+                .social {
+                    height: 50px;
+                    width: 50px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid $brown;
+                    margin-inline-end: 30px;
+                    @include transition(all 0.3s ease);
+
+                    a {
+                        width: 20px;
+                        height: 20px;
+                        object-fit: contain;
+
+                    }
+
+                    &:hover {
+                        background-color: $white;
+                        border-color: $white;
+
+                    }
+                }
+            }
+        }
     }
 }
