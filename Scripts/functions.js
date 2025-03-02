@@ -4,6 +4,7 @@ $(document).ready(function () {
     checkLastScroll();
     animateTitles();
     toggleActive();
+    mobileMenuToggler();
     console.log("All functions initialized.");
 
 });
@@ -82,8 +83,17 @@ function toggleActive() {
             once: true, // Ensures it only triggers once
         }
     });
+}
+function mobileMenuToggler() {
+    $(".menuButton").click(function () {
+        $(".menuList").addClass("active");
+        $("body").css("overflow", "hidden"); // Prevent scrolling
+    });
 
-
+    $(".close").click(function () {
+        $(".menuList").removeClass("active");
+        $("body").css("overflow", ""); // Restore scrolling
+    });
 }
 
 

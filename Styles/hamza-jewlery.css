@@ -100,6 +100,13 @@ header {
       display: flex;
       align-items: center;
       gap: 40px; }
+      header .headerWrapper .left .menuList .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: auto;
+        font-size: 50px;
+        color: #B07B54; }
       header .headerWrapper .left .menuList .menuItem {
         color: #000000;
         font-size: 16px; }
@@ -131,6 +138,18 @@ header {
     header .headerWrapper .right {
       display: flex;
       justify-content: end; }
+      header .headerWrapper .right .menuButton {
+        display: none; }
+        header .headerWrapper .right .menuButton .line {
+          background-color: #1B1B1B;
+          width: 20px;
+          height: 1px;
+          margin-bottom: 5px;
+          -webkit-transition: all 0.3sease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3sease; }
 
 .mainBanner {
   background-color: #EAD9CE;
@@ -261,7 +280,10 @@ header {
     margin-bottom: 72px;
     display: flex; }
     .bestSellers .blockBody .productListing .products .listingItemDIV .listingImage {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      max-width: 100%; }
+      .bestSellers .blockBody .productListing .products .listingItemDIV .listingImage img {
+        width: 100%; }
     .bestSellers .blockBody .productListing .products .listingItemDIV .listingTitle {
       font-size: 16px;
       color: #1B1B1B;

@@ -1,3 +1,85 @@
+@media all and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important; }
 
+  .main {
+    padding-top: 86px; }
+
+  .bestSellers {
+    padding: 50px 0;
+    overflow: hidden; }
+    .bestSellers .blockHead {
+      margin-bottom: 30px; }
+    .bestSellers .blockBody .productListing .products {
+      margin-bottom: 30px;
+      flex-wrap: wrap; }
+      .bestSellers .blockBody .productListing .products .listingItemDIV {
+        margin-bottom: 30px;
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0; }
+        .bestSellers .blockBody .productListing .products .listingItemDIV:last-of-type {
+          margin-bottom: 0; }
+
+  .mainBanner {
+    padding-top: 50px; }
+    .mainBanner .bannerText {
+      padding-top: 0;
+      margin-bottom: 30px; }
+
+  .textBlock {
+    padding: 50px 0; }
+    .textBlock .blockTitle {
+      margin-bottom: 30px; }
+    .textBlock .blockDescription p {
+      max-width: 100%;
+      margin: 0; }
+
+  .collections {
+    padding: 50px 0; }
+    .collections .blockHead {
+      margin-bottom: 30px; }
+    .collections .blockBody .listingHolder .listingItemDIV {
+      margin-bottom: 30px; }
+      .collections .blockBody .listingHolder .listingItemDIV:last-of-type {
+        margin-bottom: 0; }
+    .collections .blockBody .listingHolder .listingItem .listingTitle {
+      font-size: 16px;
+      padding: 10px 7px; }
+    .collections .blockBody .listingHolder .listingItem .listingImage img {
+      max-width: 100%; }
+
+  header .container {
+    padding: 0 20px; }
+  header .headerWrapper .middle {
+    width: 50%; }
+    header .headerWrapper .middle .logoHolder {
+      max-width: 120px; }
+  header .headerWrapper .right {
+    width: 50%; }
+    header .headerWrapper .right .menuButton {
+      display: block; }
+    header .headerWrapper .right .search {
+      display: none; }
+  header .headerWrapper .left .menuList {
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    height: 100vh;
+    background: white;
+    display: flex;
+    transform: translateX(100%);
+    align-items: center;
+    justify-content: center; }
+    header .headerWrapper .left .menuList.active {
+      transform: none; } }
 
 /*# sourceMappingURL=hamza-jewlery-responsive.css.map */
